@@ -1,0 +1,216 @@
+@media screen and (max-width: 767px) {
+    header .header-top .header-top-center{
+        display: none;
+    }
+    header .header-top .header-top-right{
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: 10px;
+    }
+    .navigation .navigation-content{
+        position: fixed;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background-color: white;
+        width: 300px;
+        z-index: 99;
+        border-left: 1px solid #ddd;
+        flex-direction: column;
+        gap: 30px 0;
+        padding-top: 60px;
+        align-items: stretch;
+        transform: translateX(120%);
+        will-change: transform;
+        transition: all 0.2s linear;
+    }
+    main .carousel .chevron-left{
+        position: absolute;
+        padding: 15px;
+        border: none;
+        background-color: #EAEBED;
+        top:50%
+    }
+    main .carousel .chevron-right{
+        position: absolute;
+        padding: 15px;
+        border: none;
+        background-color: #EAEBED;
+        top:50%;
+        right:0;
+    }
+    .navigation .navigation-content li{
+        display: inline-block;
+        margin-right: 100px!important;
+    }
+    .navigation .navigation-content.is-show{
+        transform: translateX(50%);
+    }
+    .navigation .menu-toggle{
+        display: inline-flex;
+        justify-content: space-between;
+        flex-direction: column;
+        margin-right: 20px;
+    }
+    main .carousel{
+        display: flex;
+        position: relative;
+        width: 100%;
+        height: 300px;
+    }
+    main .carousel img{
+        position: absolute;
+        width: 100%;
+        /*height: 100%;*/
+        object-fit: fill;
+        background-position: center;
+        top:0;
+    }
+    main .carousel-content {
+        display: flex;
+        flex-wrap: wrap;
+        position: absolute;
+        flex-direction: column;
+        left: 8%;
+        top:10%;
+        width: 45%;
+    }
+    main .carousel .carousel-content p:first-child{
+        font-size: 60px;
+        margin-bottom: 0px;
+    }
+    main .carousel .carousel-content p:nth-child(2){
+        margin-bottom: 10px;
+    }
+    main .carousel .carousel-content button{
+        font-size: 15px;
+        width: 50%;
+        padding: 10px;
+    }
+
+    main .feature{
+        margin-top:80px
+    }
+    main .feature .product{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        /*margin: 10px 200px;*/
+    }
+    main .feature .product .product-item{
+        width: 45%;
+        margin-bottom: 15px;
+    }
+    main .collection{
+        display: grid;
+        grid-template-columns: 60% 40%;
+        grid-template-rows: 50% 50%;
+        margin: 70px 50px 70px 50px;
+        gap: 20px;
+        height: 600px;
+    }
+    main .collection .collection-item-big{
+        grid-row-start: 1;
+        grid-row-end: 3;
+        position: relative;
+    }
+    main .collection .collection-item-big img{
+        position: absolute;
+        z-index: -10;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        border: none;
+        border-radius: 10px;
+    }
+    main .collection .collection-item-big .collection-item-big-content{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        left: 40%;
+        top:200px;
+        width: 60%;
+    }
+    main .collection .collection-item-big .collection-item-big-content p:first-child{
+        font-size: 20px;
+        color: #ababab;
+        margin-bottom: 30px;
+    }
+    main .collection .collection-item-big .collection-item-big-content h2{
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
+    main .collection .collection-item-big .collection-item-big-content p:nth-child(3){
+        display: none;
+    }
+    main .collection .collection-item-big .collection-item-big-content p:nth-child(4){
+        font-size: 20px;
+    }
+
+    main .collection .collection-item-small-1{
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        position: relative;
+    }
+    main .collection .collection-item-small-1 img{
+        position: absolute;
+        z-index: -10;
+        object-fit: cover;
+        width: 100%;
+        object-fit: cover;
+        border: none;
+        border-radius: 10px;
+        height: 100%;
+    }
+    main .collection .collection-item-small-1 .collection-item-small1-content{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        left: 20px;
+        top:30px;
+        width: 60%;
+
+    }
+    main .collection .collection-item-small-1 .collection-item-small1-content p:first-child{
+        font-size: 15px;
+        color: #ababab;
+    }
+    main .collection .collection-item-small-1 .collection-item-small1-content h2{
+        font-size: 40px;
+    }
+    main .collection .collection-item-small-1 .collection-item-small1-content p:nth-child(3){
+        font-size: 20px;
+    }
+    main .collection .collection-item-small-2{
+        position: relative;
+    }
+    main .collection .collection-item-small-2 img{
+        position: absolute;
+        z-index: -10;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        border: none;
+        border-radius: 10px;
+    }
+    main .collection .collection-item-small-2 .collection-item-small2-content{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        left: 20px;
+        top:30px;
+        width: 60%;
+    }
+    main .collection .collection-item-small-2 .collection-item-small2-content p:first-child{
+        font-size: 15px;
+        color: #ababab;
+    }
+    main .collection .collection-item-small-2 .collection-item-small2-content h2{
+        font-size: 40px;
+    }
+    main .collection .collection-item-small-2 .collection-item-small2-content p:nth-child(3){
+        font-size: 20px;
+    }
+}
